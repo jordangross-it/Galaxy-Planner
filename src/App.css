@@ -7,9 +7,9 @@
   --input-text: #000000;
   --button-text: #000000;
   --card-gradient: linear-gradient(180deg,
-      rgba(68, 95, 113, 0.5) 0%,
-      rgba(97, 90, 67, 0.5) 100%);
-  --font-main: 'Poppins', sans-serif;
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%);
+  --font-main: 'Space Grotesk', sans-serif;
 }
 
 #root {
@@ -20,7 +20,8 @@
 
 body {
   font-family: var(--font-main);
-  background: var(--bg-color);
+  background: url(assets/space-image.jpg) no-repeat center center fixed;
+  background-size: cover;
   color: var(--text-color);
   margin: 0;
   padding: 0;
@@ -47,7 +48,7 @@ body {
 }
 
 h1 {
-  font-size: 5.3rem;
+  font-size: 5.8rem;
   margin-bottom: 2rem;
   color: rgb(255, 255, 255);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -92,18 +93,19 @@ input:focus {
 }
 
 button {
-  background-color: rgb(241, 184, 84);
-  color: var(--button-text);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px 30px;
-  font-weight: bold;
+  font-weight: bolder;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 button:hover {
-  transform: translateY(-2px);
-  background-color: rgb(216, 156, 52);
+  transform: translateY(-3px) scale(1.05); 
+  background-color: rgba(62, 61, 60, 0.7);
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.6);
 }
 
 button:focus {
@@ -153,7 +155,7 @@ li {
 }
 
 .footer {
-  background-color: rgb(24, 29, 38);
+  background-color: rgb(14, 15, 32);
   color: rgb(255, 255, 255);
   width: 100vw;
   position: relative;
